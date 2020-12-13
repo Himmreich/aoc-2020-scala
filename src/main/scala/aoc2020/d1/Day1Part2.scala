@@ -1,4 +1,4 @@
-package aoc2020
+package aoc2020.d1
 
 import scala.io.Source
 import scala.util.control.Breaks.break
@@ -9,7 +9,7 @@ object Day1Part2 extends App {
   for (line <- puzzle.getLines()) {
     for (line2 <- puzzle.getLines()) {
       for (line3 <- puzzle.getLines()) {
-        if(line.toInt + line2.toInt + line3.toInt == 2020) {
+        if (line.toInt + line2.toInt + line3.toInt == 2020) {
           println(s"The second result is ${line.toInt * line2.toInt * line3.toInt}")
           break
         }
